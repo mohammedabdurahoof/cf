@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<title>Agent Kitchen</title>
+	<meta name="description" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+
+	<div class="form-1">
+		<div class="logo-form">
+			<img src="">
+		</div>
+		<div class="form-register" id="loginFormInput">
+			<form class="" >
+				<h1 class="form-1-title">Sign-In or Register </h1>
+
+				<div class="form-1-div firstform">
+					<input type="tel" name="phone" class="form-1-input " placeholder=" " id="mobile-number">
+					<label class="form-1-label">Mobile Number</label>
+				</div>
+				<div class="form-1-div secondform">
+					<input type="num" name="otp" class="form-1-input"  placeholder=" ">
+				<label class="form-1-label">Enter OTP</label>
+			</div>
+				<div id="recaptcha-div"></div>
+				<p style="margin: 1rem 0;">By continuing, you agree to our <a href="#">terms and conditions</a></p>
+				<!-- <input type="submit" name="submit" value="Continue" class="form-1-button "> -->
+				
+				<div class="form-btn-div secondform">
+					<button class=" form-1-button" >Login</button>
+				</div>
+			</form>
+			<div class="form-btn-div firstform">
+				<button class="form-1-button request-otp-btn" onclick="login()">Request OTP</button>
+			</div>
+		</div>
+		
+	</div>
+
+
+</body>
+
+<!-- JS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+	$(".request-otp-btn").click(function(){
+  $(".firstform").hide();
+  $(".secondform").show();
+});
+</script>
+
+<!--End JS -->
+
+<script src="./js/firebase/login.js"></script>
+
+</body>
+
+</html>

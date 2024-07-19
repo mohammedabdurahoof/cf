@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<script src="https://kit.fontawesome.com/1f184fdf97.js" crossorigin="anonymous"></script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
+
+	<!--Slider Pro-->
+	<link rel="stylesheet" href="css/slider-pro-master/slider-pro.min.css" />
+
+	<!-- Googele Material Design -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="back">
+				<a href="index.html"><i class="bi bi-arrow-left"></i><span class="web">Back to home</span></a>
+				<h1 class="check-out-logo"></h1>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container">
+		<div class="row mt-5 " id="tabs">
+			<div class="col-lg-4 col-md-4 col-12 ">
+				<div class="row">
+					<div class="account cf-border web">
+						<div class="account-details">
+							<h5>Name</h5>
+							<p>example@gmail.com</p>
+							<p>+91 9343895110</p>
+						</div>
+					</div>
+
+					<div class="nav  tab-section cf-border" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="my-info" data-toggle="pill" href="#myInfo" role="tab"
+							aria-controls="myInfo" aria-selected="true">
+							<div class="tab-button">
+								<span class="mobile-tab mobile"><i class="bi bi-person"></i></span>
+								<span class="web-tab">
+									<p>Personal Information</p>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+
+						<a class="nav-link  " data-toggle="pill" href="#v-pills-profile" role="tab"
+							aria-controls="v-pills-profile" aria-selected="false">
+							<div class="tab-button">
+								<span class="mobile-tab mobile"><i class="bi bi-shop fs"></i></span>
+								<span class="web-tab">
+									<p>My Orders</p>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+
+						<a class="nav-link  " data-toggle="pill" href="#myAddresses" role="tab"
+							aria-controls="myAddresses" aria-selected="false">
+							<div class="tab-button">
+								<span class="mobile-tab mobile"><i class="bi bi-geo-alt fs"></i></span>
+								<span class="web-tab">
+									<p>My Addresses</p>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+
+						<a class="nav-link  " data-toggle="pill" href="#v-pills-settings" role="tab"
+							aria-controls="v-pills-settings" aria-selected="false">
+							<div class="tab-button">
+								<span class="mobile-tab mobile"><i class="bi bi-heart fs"></i></span>
+								<span class="web-tab">
+									<p>Favourites</p>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+							</div>
+						</a>
+						<button class="mobile"><i class="bi bi-power "></i></button>
+					</div>
+					<div class="log-out cf-border web">
+						<button>Logout</button>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div id="orderModal" class="modal">
+				<div class="modal-content">
+					<div class="order-modal">
+						<div class="container">
+							<div class="order-modal-top">
+								<div class="order-modal-status">
+									<p class="order-modal-status-main">Order Status</p>
+									<p class="order-modal-status-text">Delivered</p>
+								</div>
+								<button class="close-btn"><i class="bi bi-x"></i></button>
+							</div>
+							<div class="order-summary">
+								<div class="order-summary-table">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="head-table">
+												<a href="">
+													<p class="bold">AFGHAN CHICKEN</p>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>QTY:</p>
+												<p class="bold"> 1</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Price:</p>
+												<p class="bold">₹1</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Cleaning:</p>
+												<p class="bold">₹0</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Skin Removal:</p>
+												<p class="bold">₹0</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<p>Cutting:</p>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Biriyani Cut</p>
+												<p class="bold">₹0.0</p>
+											</div>
+										</div>
+									</div>
+									<div class="order-summary-total">
+										<p>Total Price : ₹262</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="order-box-main">
+								<p class="order-info">Order Info</p>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Order No</p>
+									<p class="order-no-main-text">2021-000009</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Total Amount</p>
+									<p class="order-no-main-text">₹ 262</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Order On</p>
+									<p class="order-no-main-text">13/02/2020</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Payment Method</p>
+									<p class="order-no-main-text">COD</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="orderModal" class="modal">
+				<div class="modal-content ">
+					<div class="order-modal ">
+						<div class="container">
+							<div class="order-modal-top">
+								<div class="order-modal-status">
+									<p class="order-modal-status-main">Order Status</p>
+									<p class="order-modal-status-text">Delivered</p>
+								</div>
+								<button class="close-btn"><i class="bi bi-x"></i></button>
+							</div>
+							<div class="order-summary">
+								<div class="order-summary-table">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="head-table">
+												<a href="">
+													<p class="bold">AFGHAN CHICKEN</p>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>QTY:</p>
+												<p class="bold"> 1</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Price:</p>
+												<p class="bold">₹262</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Cleaning:</p>
+												<p class="bold">₹8</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Skin Removal:</p>
+												<p class="bold">₹30</p>
+											</div>
+										</div>
+										<div class="col-md-6 col-6">
+											<p>Cutting:</p>
+										</div>
+										<div class="col-md-6 col-6">
+											<div class="order-summary-table-content">
+												<p>Biriyani Cut</p>
+												<p class="bold">₹0.0</p>
+											</div>
+										</div>
+									</div>
+									<div class="order-summary-total">
+										<p>Total Price : ₹300</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="order-box-main">
+								<p class="order-info">Order Info</p>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Order No</p>
+									<p class="order-no-main-text">2021-000009</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Total Amount</p>
+									<p class="order-no-main-text">₹ 300</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Order On</p>
+									<p class="order-no-main-text">13/02/2020</p>
+								</div>
+								<div class="order-box-main-container">
+									<p class="order-box-main-head">Payment Method</p>
+									<p class="order-no-main-text">COD</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="col-md-8 margin-bottom-tab">
+
+				<!-- Tabs content -->
+				<div class="tab-content">
+					<div class="tab-pane   active " id="myInfo" role="tabpanel" aria-labelledby="myInfo">
+						<h5 class="tab-head">Edit my info</h5>
+						<div class="account cf-border mobile">
+							<div class="account-details">
+								<h5>Name</h5>
+								<p>example@gmail.com</p>
+								<p>+91 9343895110</p>
+							</div>
+						</div>
+						<form class="edit-my-info" id="userNewForm">
+							<p style=" color: #787777; font-weight: 500;">Please fill the details to continue</p>
+							<div class="form-1-div mb-4">
+								<input type="text" name="username" class="form-1-input " placeholder=" ">
+								<label class="form-1-label">Your Name</label>
+							</div>
+							<div class="form-1-div mb-3">
+								<input type="email" name="email" class="form-1-input " placeholder=" ">
+								<label class="form-1-label">Email address</label>
+							</div>
+							<input type="submit" name="submit" value="Save" class="edit-my-info-button ">
+						</form>
+					</div>
+
+					<div class="tab-pane " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+						<h5 class="tab-head">My Orders</h5>
+						<div class="row ">
+							<div class="col-md-6">
+								<div class="order-box">
+									<div class="container">
+										<div class="order-box-top">
+											<div class="order-no-top">
+												<p class="order-no-top-text">Order No:</p>
+												<p class="order-no-text">2021-000009</p>
+											</div>
+											<div class="delivery-status">
+												<p>Delivered</p>
+											</div>
+										</div>
+										<div class="order-box-main">
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Order No</p>
+												<p class="order-no-main-text">2021-000009</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Total Amount</p>
+												<p class="order-no-main-text">₹ 262</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Order On</p>
+												<p class="order-no-main-text">13/02/2020</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Payment Method</p>
+												<p class="order-no-main-text">COD</p>
+											</div>
+										</div>
+										<div class="order-box-bottom">
+											<button class="order-summary-button">
+												Order Summary<i class="bi bi-arrow-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="order-box">
+									<div class="container">
+										<div class="order-box-top">
+											<div class="order-no-top">
+												<p class="order-no-top-text">Order No:</p>
+												<p class="order-no-text">2021-000009</p>
+											</div>
+											<div class="delivery-status">
+												<p>Delivered</p>
+											</div>
+										</div>
+										<div class="order-box-main">
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Order No</p>
+												<p class="order-no-main-text">2021-000009</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Total Amount</p>
+												<p class="order-no-main-text">₹ 262</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Order On</p>
+												<p class="order-no-main-text">13/02/2020</p>
+											</div>
+											<div class="order-box-main-container">
+												<p class="order-box-main-head">Payment Method</p>
+												<p class="order-no-main-text">COD</p>
+											</div>
+										</div>
+										<div class="order-box-bottom">
+											<button class="order-summary-button">
+												Order Summary<i class="bi bi-arrow-right"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="tab-pane " id="myAddresses" role="tabpanel" aria-labelledby="myAddresses">
+						<div class="address mb-3">
+							<h5 class="tab-head">My Addresses</h5>
+							<button class="delivery-button"><span class="material-icons">add_location_alt</span>Add New
+								Address</button>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="delivery-box cf-border">
+									<div class="select-icon">
+										<i class="bi bi-check-square-fill"></i>
+									</div>
+									<div class="address-1">
+										<h6>Kochi</h6>
+									</div>
+									<div class="address-2">
+										<h6>Kaloor</h6>
+									</div>
+									<div class="address-3">
+										<h6>jsndfi</h6>
+									</div>
+									<div class="Pincode">
+										<h6>676122</h6>
+									</div>
+									<div class="delete-address">
+										<button class="delete-address-btn">Delete</button>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<div class="delivery-box cf-border">
+									<div class="select-icon">
+										<i class="bi bi-check-square-fill"></i>
+									</div>
+									<div class="address-1">
+										<h6>Kochi</h6>
+									</div>
+									<div class="address-2">
+										<h6>Kaloor</h6>
+									</div>
+									<div class="address-3">
+										<h6>jsndfi</h6>
+									</div>
+									<div class="Pincode">
+										<h6>676122</h6>
+									</div>
+									<div class="delete-address">
+										<button class="delete-address-btn">Delete</button>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<div class="delivery-box cf-border">
+									<div class="select-icon">
+										<i class="bi bi-check-square-fill"></i>
+									</div>
+									<div class="address-1">
+										<h6>Kochi</h6>
+									</div>
+									<div class="address-2">
+										<h6>Kaloor</h6>
+									</div>
+									<div class="address-3">
+										<h6>jsndfi</h6>
+									</div>
+									<div class="Pincode">
+										<h6>676122</h6>
+									</div>
+									<div class="delete-address">
+										<button class="delete-address-btn">Delete</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="select-delivery modal">
+							<div class="modal-data cf-border">
+								<h6 class="mb-4">Add New Address</h6>
+								<div class="form-1-div ">
+									<input type="" name="Address" class="form-1-input " placeholder="  ">
+									<label class="form-1-label">Address Line 1</label>
+								</div>
+								<div class="form-1-div ">
+									<input type="" name="Address" class="form-1-input " placeholder="  ">
+									<label class="form-1-label">Address Line 2</label>
+								</div>
+								<div class="form-1-div ">
+									<input type="" name="Address" class="form-1-input " placeholder="  ">
+									<label class="form-1-label">Address Line 3</label>
+								</div>
+								<div class="form-1-div location-div ">
+									<input type="" name="" class="form-1-input " placeholder="  ">
+									<label class="form-1-label">Location</label>
+									<span class="material-icons">gps_fixed</span>
+								</div>
+								<div class="pretty mt-2 p-svg p-curve">
+									<input type="checkbox" />
+									<div class="state p-success">
+										<!-- svg path -->
+										<svg class="svg svg-icon" viewBox="0 0 20 20">
+											<path
+												d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z"
+												style="stroke: white;fill:white;"></path>
+										</svg>
+										<label>Set as Default Address</label>
+									</div>
+								</div>
+								<div class="button-group d-flex ">
+									<button class="save-btn">Save</button>
+									<button class="cancel-btn">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+						<h5 class="tab-head">My Favourites</h5>
+						<div class="row ">
+							<div class="col-md-6 col-12 mb-4">
+								<a href="">
+									<div class="product-box">
+										<div class="product-image" style="background-image:url('images/image1.jpg')">
+										</div>
+										<div class="product-desc">
+											<div class="product-title">
+												<h5>CHICKEN GIZZARD-WHOLE FRESH </h5>
+											</div>
+											<div class="product-price">
+												<h6>₹<span>150</span></h6>
+											</div>
+										</div>
+									</div>
+								</a>
+								<div class="fav-remove ">
+									<button class="fav-remove-button cf-border ">Remove from Favourites</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/slider-pro-master/jquery.sliderPro.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!--End JS -->
+
+
+
+</body>
+
+</html>
